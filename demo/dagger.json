@@ -1,0 +1,6 @@
+{
+  "name": "demo",
+  "sdk": "typescript",
+  "source": ".",
+  "engineVersion": "v0.11.0"
+}

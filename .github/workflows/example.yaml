@@ -1,0 +1,21 @@
+name: "Example"
+
+on: "workflow_call"
+
+jobs:
+  example:
+    name: example
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Run the Dagger pipeline
+        uses: dagger/dagger-for-github@v5
+        with:
+          verb: call
+          module: ./demo
+          args: >-
+            --dir=.
+            demo

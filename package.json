@@ -1,0 +1,15 @@
+{
+  "name": "dagger-11.2-bug",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "description": "A replication for a bug report against Dagger 11.2",
+  "devDependencies": {
+    "@dagger.io/dagger": "^0.11.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.2"
+  },
+  "scripts": {
+    "start": "dagger -m demo call --dir=. bug"
+  },
+  "packageManager": "yarn@1.22.17"
+}
