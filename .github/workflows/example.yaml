@@ -14,6 +14,7 @@ jobs:
       - name: Run the Dagger pipeline
         uses: dagger/dagger-for-github@v5
         with:
+          version: "0.11.2"
           verb: call
           module: ./demo
           args: >-
